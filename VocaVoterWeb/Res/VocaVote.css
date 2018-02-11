@@ -1,0 +1,98 @@
+﻿/* General */
+
+body {
+
+}
+
+img {
+	border: 0;
+}
+
+table.grid td {
+	padding: 5px;
+	border-bottom: 1px solid;
+	border-bottom-color: Gray;
+}
+
+div.content {
+	margin: 10px;
+}
+
+.extraInfo {
+	font-size: smaller;
+}
+
+/* Message boxes */
+
+.errorMsg, .noticeMsg, .successMsg {
+	padding: .8em;
+	margin-bottom: 1.6em;
+	border: 2px solid #ddd;
+}
+
+.noticeMsg {
+	background:#FFF6BF;
+	color:#514721;
+	border-color:#FFD324;
+}
+
+.successMsg {
+	background: #E6EFC2;
+	color: #264409;
+	border-color: #C6D880;
+}
+
+/* Link icons */
+
+.textLink {
+	display: -moz-inline-box;
+	display: inline-block;
+	height: 16px;
+	padding: 2px 2px 2px 22px;
+	margin: 0 10px 0 0;
+	background-position: 2px 2px;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+a.iconLink {
+	padding: 2px 22px 2px 0;
+	margin: -2px 0;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+a.acceptLink {
+	background-image: url(../Res/accept.png);
+}
+
+a.editTableLink {
+	background-image: url(../Res/table_edit.png);
+}
+
+a.chartLink {
+	background-image: url(../Res/chart_bar.png);
+}
+
+a.databaseLink {
+	background-image: url(../Res/database.png);
+}
+
+a.nicoLink {
+	background-image: url(../Res/nico.png);
+}
+
+/* Menu */
+
+td.menuCell {
+	/*background: url("../Res/menuborder.png") repeat-y scroll right transparent;
+	background-color: #6DE9EE;*/
+	vertical-align: top;
+}
+
+div.menuPanel h2 {
+	font-size: medium;
+	font-weight: bold;	
+	margin-bottom: 0px;
+}

@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="VocaVoter.master.cs" Inherits="VocaVoter.Web.VocaVoter" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>VocaVoter</title>
+	<link rel="Stylesheet" href="Res/VocaVote.css" />
+	<link rel="Stylesheet" href="Res/jquery-ui/jquery-ui-1.8.6.custom.css" />
+	<script language="javascript" type="text/javascript" src="Script/jquery-1.4.4.min.js"></script>
+	<script language="javascript" type="text/javascript" src="Script/jquery-ui-1.8.6.custom.min.js"></script>
+	<script language="javascript" type="text/javascript">
+
+		function ShowLoginDialog() {
+
+			$("#loginDialog").dialog("open");
+
+		}
+
+		$(document).ready(function () {
+
+			$("#loginDialog").dialog({ autoOpen: false });
+
+		});
+	
+	</script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+	<div id="loginDialog" title="Login">
+		TODO		
+	</div>
+
+	<table><tr><td class="menuCell">
+
+	<div class="menuPanel">
+	
+		<h2>Navigation</h2>
+		<a runat="server" id="rootLink" href='<%# RootUrl %>'>Site root</a>
+
+		<h2>Friend sites</h2>
+		<a href="http://mikuchan.org">Mikuchan</a><br />
+		<a href="http://www.vocaloidism.com">Vocaloidism</a>
+
+		<h2>Other</h2>
+		<a href="irc://irc.tsukihi.me/mikuchan">#mikuchan IRC</a>
+	
+	</div>
+
+	</td><td>
+
+    <div class="rightPanel content">
+		<p class="noticeMsg">Not logged in. You may log in using <a href="#" onclick="ShowLoginDialog(); return false;">OpenId</a>.</p>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+	</td></tr></table>
+
+    </form>
+</body>
+</html>
